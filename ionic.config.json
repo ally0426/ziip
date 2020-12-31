@@ -1,7 +1,17 @@
 {
+<<<<<<< HEAD
   "name": "ionic-angular-course",
   "integrations": {
     "capacitor": {}
   },
   "type": "angular"
+=======
+  "name": "ionProperty2",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "ca339cf9"
+>>>>>>> d63a2ddcbd48ded45ae7ed7a702e2a3143fc1113
 }

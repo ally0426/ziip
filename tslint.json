@@ -126,12 +126,21 @@
       "kebab-case"
     ],
     "no-output-on-prefix": true,
+<<<<<<< HEAD
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,
     "use-host-property-decorator": true,
     "no-input-rename": true,
     "no-output-rename": true,
     "use-life-cycle-interface": true,
+=======
+    "no-inputs-metadata-property": true,
+    "no-outputs-metadata-property": true,
+    "no-host-metadata-property": true,
+    "no-input-rename": true,
+    "no-output-rename": true,
+    "use-lifecycle-interface": true,
+>>>>>>> d63a2ddcbd48ded45ae7ed7a702e2a3143fc1113
     "use-pipe-transform-interface": true,
     "directive-class-suffix": true
   }

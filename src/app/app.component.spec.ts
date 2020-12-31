@@ -4,6 +4,10 @@ import { TestBed, async } from '@angular/core/testing';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+<<<<<<< HEAD
+=======
+import { RouterTestingModule } from '@angular/router/testing';
+>>>>>>> d63a2ddcbd48ded45ae7ed7a702e2a3143fc1113
 
 import { AppComponent } from './app.component';
 
@@ -25,10 +29,18 @@ describe('AppComponent', () => {
         { provide: SplashScreen, useValue: splashScreenSpy },
         { provide: Platform, useValue: platformSpy },
       ],
+<<<<<<< HEAD
     }).compileComponents();
   }));
 
   it('should create the app', () => {
+=======
+      imports: [ RouterTestingModule.withRoutes([])],
+    }).compileComponents();
+  }));
+
+  it('should create the app', async () => {
+>>>>>>> d63a2ddcbd48ded45ae7ed7a702e2a3143fc1113
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
@@ -42,6 +54,28 @@ describe('AppComponent', () => {
     expect(splashScreenSpy.hide).toHaveBeenCalled();
   });
 
+<<<<<<< HEAD
   // TODO: add more tests!
+=======
+  it('should have menu labels', async () => {
+    const fixture = await TestBed.createComponent(AppComponent);
+    await fixture.detectChanges();
+    const app = fixture.nativeElement;
+    const menuItems = app.querySelectorAll('ion-label');
+    expect(menuItems.length).toEqual(2);
+    expect(menuItems[0].textContent).toContain('Home');
+    expect(menuItems[1].textContent).toContain('List');
+  });
+
+  it('should have urls', async () => {
+    const fixture = await TestBed.createComponent(AppComponent);
+    await fixture.detectChanges();
+    const app = fixture.nativeElement;
+    const menuItems = app.querySelectorAll('ion-item');
+    expect(menuItems.length).toEqual(2);
+    expect(menuItems[0].getAttribute('ng-reflect-router-link')).toEqual('/home');
+    expect(menuItems[1].getAttribute('ng-reflect-router-link')).toEqual('/list');
+  });
+>>>>>>> d63a2ddcbd48ded45ae7ed7a702e2a3143fc1113
 
 });
